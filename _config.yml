@@ -45,10 +45,10 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine them on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/favicon.png # /images/favicon-16x16-next.png
+  medium: /images/favicon.png # /images/favicon-32x32-next.png
+  apple_touch_icon: /images/favicon.png # /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/favicon.png # /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -60,7 +60,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2016
 
   # Icon between year and copyright info.
   icon:
@@ -90,8 +90,8 @@ footer:
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.miitbeian.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp:  晋ICP备16002083号-1
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
@@ -138,9 +138,9 @@ exturl: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -157,9 +157,9 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -175,9 +175,9 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/maxmeng93 || github
+  E-Mail: mailto:maxmeng93@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -204,15 +204,15 @@ links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com
+links:
+  MaxMeng: https://www.maxmeng.top/
 
 # Sidebar Avatar
 avatar:
   # in theme directory(source/images): /images/avatar.gif
   # in site  directory(source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/avatar.jpg #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -377,7 +377,7 @@ custom_logo:
 # Code Highlight theme
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 # Enable "cheers" for archive page.
 cheers_enabled: true
@@ -510,7 +510,7 @@ pangu: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 64b577bdfd8c5db9871b14fb9737b9b8
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -518,8 +518,8 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: maxmeng
   count: true
   lazyload: false
 
@@ -615,10 +615,10 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
-#google_site_verification:
+google_site_verification: xMV9Cl1Zwv3kAHKQMofWUQt8Vezt6KB4nhbhtijfzNE
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-75583813-2
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
@@ -739,7 +739,7 @@ calendar:
 # See: https://github.com/theme-next/hexo-theme-next/blob/master/docs/ALGOLIA-SEARCH.md
 # Dependencies: https://github.com/theme-next/theme-next-algolia-instant-search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
   labels:
@@ -954,10 +954,10 @@ vendors:
   # Internal version: 2.4.1
   # See: https://www.algolia.com
   # Example:
-  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
-  # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-  algolia_instant_js:
-  algolia_instant_css:
+  algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
+  algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  # algolia_instant_js: # /assets/algolia/algoliasearchLite.min.js
+  # algolia_instant_css:
 
   # Internal version: 1.0.2
   # See: https://github.com/HubSpot/pace
